@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "65a0ed3aa3ea8db583501429edd45b95",
+    "content-hash": "86d0f42f199f59f325165577bdc62de6",
     "packages": [
         {
             "name": "psr/log",
@@ -1409,7 +1409,7 @@
                 }
             ],
             "description": "Wrapping ticks into a promise",
-            "time": "2017-06-21T20:04:37+00:00"
+            "time": "2017-06-21 20:04:37"
         }
     ],
     "aliases": [],
