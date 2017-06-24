@@ -5,8 +5,8 @@ namespace WyriHaximus\Tests\PSR3\KeywordFilter;
 use Prophecy\Argument;
 use Psr\Log\LoggerInterface;
 use Psr\Log\Test\LoggerInterfaceTest;
-use function WyriHaximus\PSR3\checkCorrectLogLevel;
 use WyriHaximus\PSR3\KeywordFilter\MessageKeywordFilterLogger;
+use function WyriHaximus\PSR3\checkCorrectLogLevel;
 use function WyriHaximus\PSR3\processPlaceHolders;
 
 final class MessageKeywordFilterLoggerTest extends LoggerInterfaceTest
@@ -30,6 +30,7 @@ final class MessageKeywordFilterLoggerTest extends LoggerInterfaceTest
             checkCorrectLogLevel($level);
             $message = processPlaceHolders($message, $context);
             $that->logs[] = $level . ' ' . $message;
+
             return true;
         });
 

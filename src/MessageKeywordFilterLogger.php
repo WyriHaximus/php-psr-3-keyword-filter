@@ -18,7 +18,7 @@ final class MessageKeywordFilterLogger extends AbstractLogger
     private $logger;
 
     /**
-     * @param array $keywords
+     * @param array           $keywords
      * @param LoggerInterface $logger
      */
     public function __construct(array $keywords, LoggerInterface $logger)
