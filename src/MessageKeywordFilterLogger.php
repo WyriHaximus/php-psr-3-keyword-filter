@@ -30,7 +30,7 @@ final class MessageKeywordFilterLogger extends AbstractLogger
     public function log($level, $message, array $context = [])
     {
         foreach ($this->keywords as $keyword) {
-            if (strpos($message, $keyword) !== false) {
+            if (stripos($message, $keyword) !== false) {
                 return;
             }
         }

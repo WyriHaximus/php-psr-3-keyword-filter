@@ -44,12 +44,12 @@ final class MessageKeywordFilterLoggerTest extends LoggerInterfaceTest
 
     public function testFilter()
     {
-        $keywords = ['foo', 'bar'];
+        $keywords = ['foo', 'bAr'];
         $logger = $this->prophesize(LoggerInterface::class);
         $logger->log('info', 'faa bor', [])->shouldBeCalled();
 
         $filter = new MessageKeywordFilterLogger($keywords, $logger->reveal());
-        $filter->log('info', 'foo');
+        $filter->log('info', 'fOo');
         $filter->log('info', 'bar');
         $filter->log('info', 'faa bor');
     }
