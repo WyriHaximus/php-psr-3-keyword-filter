@@ -1,3 +1,5 @@
+# Abandoned! Use [`wyrihaximus/psr-3-filter`](https://github.com/wyrihaximus/php-psr-3-filter) instead
+
 # Keyword Filter for [PSR-3](http://www.php-fig.org/psr/psr-3/)
 
 [![Linux Build Status](https://travis-ci.org/WyriHaximus/php-psr-3-keyword-filter.png)](https://travis-ci.org/WyriHaximus/php-psr-3-keyword-filter)
