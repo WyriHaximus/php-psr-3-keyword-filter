@@ -9,6 +9,9 @@ use WyriHaximus\PSR3\KeywordFilter\MessageKeywordFilterLogger;
 use function WyriHaximus\PSR3\checkCorrectLogLevel;
 use function WyriHaximus\PSR3\processPlaceHolders;
 
+/**
+ * @internal
+ */
 final class MessageKeywordFilterLoggerTest extends LoggerInterfaceTest
 {
     /**
@@ -42,7 +45,7 @@ final class MessageKeywordFilterLoggerTest extends LoggerInterfaceTest
         return $this->logs;
     }
 
-    public function testFilter()
+    public function testFilter(): void
     {
         $keywords = ['foo', 'bAr'];
         $logger = $this->prophesize(LoggerInterface::class);
